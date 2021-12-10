@@ -10,14 +10,22 @@
     </div>
 
     @if($category->products->count()!=0)
-        <div class="row  my-5">
-            @foreach($category->products as $product)
-                @include('layouts.card',compact('product'))
-            @endforeach
+
+        <div class="container">
+
+            <div class="row  my-5">
+                @foreach($category->products as $product)
+                    @include('layouts.card', compact('product'))
+                @endforeach
+            </div>
         </div>
+
     @else
         <div class="container text-center h2 my-5">
             Пока , что нет товаров данной категории .
         </div>
     @endif
+
+
 @endsection
+

@@ -14,10 +14,12 @@
                     <div  class="card-cat card mx-auto mb-3" style="max-width: 300px; " >
                         <!-- Изображение -->
                         <div class="scale">
-                            <a class="card-a" href="{{route('category',$category->id)}}"><img class="card-img-top scale"  src="{{Storage::url($category->image)}}" alt="{{$category->name}}-Modistka"></a>
+                            <a class="card-a"  href="{{route('category',$category->id)}}">
+                                <img class="card-img-top scale"  src="{{Storage::url($category->image)}}" alt="{{$category->name}}-Modistka">
+                            </a>
                         </div>
                         <div class="py-4"style="position:absolute; bottom: 0; background:rgba(0,0,0, .6); width:100%; ">
-                        <h4 class="card-title"><a  class="card-b" href="{{route('category',$category->id)}}" style="">{{$category->name}}</a></h4>
+                        <h4 class="card-title"><a  class="card-b" href="{{route('category',$category->id)}}" style="text-decoration: none!important">{{$category->name}}</a></h4>
                         </div>
                     </div><!-- Конец карточки -->
                 </div>
