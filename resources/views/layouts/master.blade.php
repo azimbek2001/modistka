@@ -39,7 +39,7 @@
 <main class="header_main">
     <header class="header" style="background: rgba(166,236,236,255)">
         <div class="d-flex justify-content-center" >
-            <img src="img/header_logo.png" style="width: 400px ; height:400px " alt="">
+            <img src="/img/header_logo.png" style="width: 400px ; height:400px " alt="">
         </div>
 {{--        <h1>modistka</h1>--}}
         <nav style="color: rgba(102,24,113,255) !important;">
