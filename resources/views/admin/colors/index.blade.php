@@ -37,15 +37,16 @@
                                 <td style="vertical-align: center;">
                                     {{ $color->name }}
                                 </td>
-                                <td  style="  width:10px; height:10px; background: {{$color->color}}" class="text-center">
+                                <td style="  width:10px; height:10px; background: {{$color->color}}"
+                                    class="text-center">
                                 </td>
                                 <td class="text-center">
 
-                                        <form action="{{route('admin.colors.destroy',$color->id)}}" method="POST">
-                                            <a href="{{route('admin.colors.edit' , $color->id)}}" class="" >Изменить</a>
-                                            @csrf
-                                            <input class="button-delete"type="submit" value='Удалить'>
-                                        </form>
+                                    <form action="{{route('admin.colors.destroy',$color->id)}}" method="POST">
+                                        <a href="{{route('admin.colors.edit' , $color->id)}}" class="">Изменить</a>
+                                        @csrf
+                                        <input class="button-delete" type="submit" value='Удалить'>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach

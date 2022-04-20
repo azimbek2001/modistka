@@ -32,7 +32,7 @@
                                 </td>
 
                                 <td class="text-center">
-                                    @if(isset($order->user)){{$order->user->created_at->format('d.m.Y')}}@else{{"-"}}@endif
+                                    @if(isset($order->user)){{optional(optional($order->user)->created_at)->format('d.m.Y')}}@else{{"-"}}@endif
                                 </td>
                             </tr>
                             </tbody>
@@ -61,10 +61,10 @@
                                         {{++$key}}
                                     </td>
                                     <td>
-                                        {{$product->product->name}}
+                                        {{optional($product->product)->name}}
                                     </td>
                                     <td>
-                                        {{$product->color->name}}
+                                        {{optional($product->color)->name}}
                                     </td>
                                     <td class="text-center">
                                         {{$product->amount}}
@@ -116,7 +116,7 @@
                                 </td>
 
                                 <td class="text-center">
-                                    {{$order->status->title}}
+                                    {{optional($order->status)->title}}
                                 </td>
                             </tr>
                             </tbody>

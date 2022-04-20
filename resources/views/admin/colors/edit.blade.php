@@ -9,29 +9,31 @@
                 <ul class="nav nav-pills card-header-pills">
                     <li class="nav-item ms-auto">
                         <a class="nav-link" href="{{ route('admin.colors.index') }}">
-                         Назад
+                            Назад
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="card-body">
                 <form action="{{ route('admin.colors.update' , $color->id) }}" method="post">
-                 @csrf
+                    @csrf
                     <div class="col-md-6">
                         <fieldset>
                             <legend>Цвет</legend>
                             <div class="mb-3">
                                 <label class="form-label">Название <span style="color:red">*</span></label>
                                 <input type="text" class="form-control" name="name" id="name"
-                                       placeholder="Пример:Чёрный" value="{{$color->name}}"required>
+                                       placeholder="Пример:Чёрный" value="{{$color->name}}" required>
                                 <div class="invalid-feedback"></div>
                             </div>
 
                             <div class="mb-3">
                                 <label class="form-label">Номер цвета <span style="color:red">*</span></label>
-                                <input type="text"  placeholder="Пример #fffff" class="form-control" name="color" id="color"
-                                       required value="{{$color->color}}">
-                                <div class="invalid-feedback" ></div>
+                                <input type="text" placeholder="Пример #fffff" class="form-control" name="color"
+                                       id="color"
+                                       required
+                                       value="{{$color->color}}">
+                                <div class="invalid-feedback"></div>
                             </div>
                         </fieldset>
                         <div>

@@ -44,7 +44,7 @@
                                 <td class="text-center">{{$order->address}}</td>
                                 <td class="text-center">{{$order->total}}</td>
                                 <td class="text-center">{{$order->created_at->format('d.m.Y')}}</td>
-                                <td class="text-center">{{$order->status->title}}</td>
+                                <td class="text-center">{{optional($order->status)->title}}</td>
                                 <td class="text-center">
                                     <a href="{{route('admin.orders.edit', $order->id)}}">Открыть</a>
                                     <form action="{{ route('admin.orders.archive' , $order->id) }}" method="post"  class="ajax row">

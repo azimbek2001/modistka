@@ -37,13 +37,16 @@
     </div>
 </section>
 <main class="header_main">
-    <header class="header">
-        <h1>modistka</h1>
-        <nav>
-            <a href="/">Главная</a>
-            <a href="{{route('categories')}}">Категории</a>
-            <a href="{{route('products.index')}}">Каталог</a>
-            <a href="#">О нас</a>
+    <header class="header" style="background: rgba(166,236,236,255)">
+        <div class="d-flex justify-content-center" >
+            <img src="img/header_logo.png" style="width: 400px ; height:400px " alt="">
+        </div>
+{{--        <h1>modistka</h1>--}}
+        <nav style="color: rgba(102,24,113,255) !important;">
+            <a style="color: rgba(102,24,113,255) !important;" href="/">Главная</a>
+            <a style="color: rgba(102,24,113,255) !important;" href="{{route('categories')}}">Категории</a>
+            <a style="color: rgba(102,24,113,255) !important;" href="{{route('products.index')}}">Каталог</a>
+            <a style="color: rgba(102,24,113,255) !important;" href="#">О нас</a>
         </nav>
     </header>
 </main>
@@ -57,21 +60,21 @@
         <!-- Section: Social media -->
         <section class="mb-4">
             <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.facebook.com/Модистка-модная-одежда-103464828961249/" role="button"
             ><i class="fab fa-facebook-f"></i
                 ></a>
-                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                 <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="modistkamode.ru@gmail.com" role="button"
             ><i class="fab fa-google"></i
                 ></a>
-                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                 <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://api.whatsapp.com/send?phone=996500110421" role="button"
             ><i class="fab fa-whatsapp"></i
                 ></a>
-<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+<a class="btn btn-outline-light btn-floating m-1" href="tel:+996500110421" target="_blank" role="button"
             ><i class="fas fa-phone"></i
                 ></a>
 
             <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            <a class="btn btn-outline-light btn-floating m-1"  target="_blank" href="https://instagram.com/modistka_kg" role="button"
             ><i class="fab fa-instagram"></i
                 ></a>
 

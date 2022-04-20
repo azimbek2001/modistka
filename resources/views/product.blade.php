@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="buttons">
-                        <a style="padding-top: 10px" href="https://wa.me/+996708714147?text=Здрасвтвуйте.%0aЯ хочу приобрести {{$product->name}} .%0a Ссылка : {{route('product.show', $product->id)}}" class="btn btn-outline-warning btn-long cart"  >Купить в один клик</a>
+                        <a style="padding-top: 10px" href="https://wa.me/+996500110421?text=Здрасвтвуйте.%0aЯ хочу приобрести {{$product->name}} .%0a Ссылка : {{route('product.show', $product->id)}}" class="btn btn-outline-warning btn-long cart"  >Купить в один клик</a>
                         <button class="btn btn-warning btn-long buy" data-id="{{ $product->id }}" id="addToCart">Добавить в корзину</button>
                     </div>
                     <div id="cart-result"></div>
