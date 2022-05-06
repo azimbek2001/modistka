@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('title','Корзина')
 @section('content')
-    <div class="div-about d-flex align-items-center">
-        <div class="container text-center  ">
-            <div class="pt-3 title">Корзина</div>
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title mb-0">Корзина</h1>
         </div>
     </div>
     @if(!session('cart') || empty(session('cart')))

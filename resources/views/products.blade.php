@@ -1,30 +1,30 @@
 @extends('layouts.master')
 @section('title','Каталог')
 @section('content')
-    <div class="div-about d-flex align-items-center">
-        <div class="container text-center  ">
-            <div class=" pt-3 title ">Каталог</div>
+    <div class="page-header" id="products-title">
+        <div class="container">
+            <h1 class="page-title mb-0" style="color:white !important;">Каталог</h1>
         </div>
     </div>
 
     <div class="container">
 
-    @if($products->count()!=0)
+        @if($products->count()!=0)
 
-        <div class="container">
+            <div class="container">
 
-            <div class="row  my-5">
-                @foreach($products as $product)
-                    @include('layouts.card', compact('product'))
-                @endforeach
+                <div class="row  my-5">
+                    @foreach($products as $product)
+                        @include('layouts.card', compact('product'))
+                    @endforeach
+                </div>
             </div>
-        </div>
 
-    @else
-        <div class="container text-center h2 my-5">
-            Пока , что нет товаров данной категории .
-        </div>
-    @endif
+        @else
+            <div class="container text-center h2 my-5">
+                Пока , что нет товаров данной категории .
+            </div>
+        @endif
     </div>
 
 @endsection
@@ -67,6 +67,22 @@
             color: red
         }
 
+
+        #products-title {
+            /* The image used */
+            /* Used if the image is unavailable */
+            width: 100%; /* You must set a specified height */
+            /* Center the image */
+            /* Do not repeat the image */
+            background-image: linear-gradient(to top, rgba(19, 19, 19, 0.35), rgba(166, 236, 236, 255)), url(
+            "{{asset('img/products.png')}}");
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+
+            /* build polygon */
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        }
 
 
     </style

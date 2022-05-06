@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('title','Все категории')
 @section('content')
-    <div class="div-about d-flex align-items-center">
-        <div class="container text-center  ">
-            <div class="pt-3 title">Категории</div>
+    <div class="page-header" id="categories-title">
+        <div class="container">
+            <h1 class="page-title mb-0" style="color:white !important;">Категории</h1>
         </div>
     </div>
     <div class="container">
@@ -27,3 +27,23 @@
         </div>
     </div>
 @endsection
+
+@push('styles')
+    <style>
+        #categories-title{
+            /* The image used */
+            /* Used if the image is unavailable */
+            width: 100%;/* You must set a specified height */
+            /* Center the image */
+            /* Do not repeat the image */
+            background-image: linear-gradient(to top,rgba(19, 19, 19, 0.35), rgba(166,236,236,255)), url(
+            "{{asset('img/categories.png')}}");
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+
+            /* build polygon */
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        }
+    </style>
+@endpush

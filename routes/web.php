@@ -63,6 +63,9 @@ Route::get('products',[ProductController::class,'index'])->name('products.index'
 Route::get('orders',[OrderController::class,'create'])->name('orders.create');
 Route::post('orders/store',[OrderController::class,'store'])->name('orders.store');
 
+Route::get('/about-us',function (){
+    return view('about');
+})->name('about');
 //    CART
 Route::get('/add-to-cart', [CartController::class, 'addToCart'])->name('addProduct.toCart');
 Route::get('/cart', [CartController::class, 'index'])->name('cart');

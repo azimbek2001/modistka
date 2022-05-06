@@ -46,7 +46,7 @@
             <a style="color: rgba(102,24,113,255) !important;" href="/">Главная</a>
             <a style="color: rgba(102,24,113,255) !important;" href="{{route('categories')}}">Категории</a>
             <a style="color: rgba(102,24,113,255) !important;" href="{{route('products.index')}}">Каталог</a>
-            <a style="color: rgba(102,24,113,255) !important;" href="#">О нас</a>
+            <a style="color: rgba(102,24,113,255) !important;" href="{{route('about')}}">О нас</a>
         </nav>
     </header>
 </main>
